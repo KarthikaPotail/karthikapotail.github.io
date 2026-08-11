@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shalinipotail.github.io/sitemap.xml
+Sitemap: https://karthikapotail.github.io/sitemap.xml
