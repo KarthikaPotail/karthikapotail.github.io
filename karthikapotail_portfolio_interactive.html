@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Karthika Potail — AI/ML researcher and Computer Engineering graduate working across TinyML, Edge AI, biomedical sensing, intelligent retrieval, and practical machine learning systems." />
+<meta name="theme-color" content="#080a0f" />
+<title>Karthika Potail — AI/ML Research + Engineering</title>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Karthika Potail",
+  "url":"https://karthikapotail.github.io/",
+  "jobTitle":"AI/ML Researcher",
+  "affiliation":{"@type":"CollegeOrUniversity","name":"The University of Texas at Dallas"},
+  "sameAs":["https://www.linkedin.com/in/shalinipotail","https://github.com/KarthikaPotail"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#080a0f;
+  --bg2:#0d1119;
+  --panel:#111620;
+  --panel2:#151c28;
+  --text:#f4f6fb;
+  --soft:#c8cfda;
+  --muted:#858e9e;
+  --line:rgba(255,255,255,.09);
+  --line2:rgba(255,255,255,.16);
+  --mint:#7df0c6;
+  --blue:#7bb4ff;
+  --violet:#b59cff;
+  --amber:#f0c67d;
+  --rose:#ef91b1;
+  --shadow:0 24px 80px rgba(0,0,0,.38);
+  --radius:26px;
+  --sans:'Manrope',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --serif:'Playfair Display',Georgia,serif;
+  --mono:'DM Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  color:var(--text);
+  font-family:var(--sans);
+  background:
+    radial-gradient(900px 650px at 8% 4%,rgba(123,180,255,.15),transparent 60%),
+    radial-gradient(700px 520px at 90% 8%,rgba(181,156,255,.12),transparent 58%),
+    radial-gradient(620px 520px at 45% 100%,rgba(125,240,198,.08),transparent 60%),
+    linear-gradient(180deg,#080a0f 0%,#0a0d13 45%,#080a0f 100%);
+  overflow-x:hidden;
+  line-height:1.6;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-3;opacity:.35;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);
+  background-size:72px 72px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 82%);
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E");
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+::selection{background:rgba(125,240,198,.25)}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+.spotlight{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:-1;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(123,180,255,.09),transparent 67%);filter:blur(12px);opacity:0;transition:opacity .25s ease}
+body:hover .spotlight{opacity:1}
+
+/* NAV */
+.navbar{position:sticky;top:0;z-index:70;border-bottom:1px solid var(--line);background:rgba(8,10,15,.70);backdrop-filter:blur(20px)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.03em}
+.brand-mark{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(145deg,rgba(125,240,198,.95),rgba(123,180,255,.9));color:#091015;font-family:var(--mono);font-weight:500;font-size:12px;box-shadow:0 0 36px rgba(125,240,198,.12)}
+.nav-links{display:flex;align-items:center;gap:5px;padding:5px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.025)}
+.nav-links a{font-family:var(--mono);font-size:11.5px;color:var(--muted);padding:8px 11px;border-radius:999px;transition:.25s ease}
+.nav-links a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.avail{display:inline-flex;align-items:center;gap:7px;color:#dffcf3;font-size:11px;font-family:var(--mono)}
+.avail i{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 14px rgba(125,240,198,.95);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45;transform:scale(.75)}}
+
+/* HERO */
+.hero{min-height:760px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(380px,.9fr);gap:58px;align-items:center;padding:92px 0 80px}
+.kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);font:500 11px var(--mono);color:var(--soft);letter-spacing:.04em}
+.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 16px rgba(240,198,125,.55)}
+h1,h2,h3,p{margin-top:0}
+h1{margin:22px 0 22px;font-size:clamp(50px,7vw,91px);line-height:.96;letter-spacing:-.065em;font-weight:800;max-width:760px}
+h1 .serif{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--mint);letter-spacing:-.045em}
+.hero-copy .lead{max-width:720px;color:var(--soft);font-size:18px;line-height:1.75}
+.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:0 17px;border-radius:999px;border:1px solid var(--line2);background:rgba(255,255,255,.035);color:var(--text);font-size:12.5px;font-weight:700;cursor:pointer;transition:transform .25s ease,border-color .25s ease,background .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-3px);border-color:rgba(125,240,198,.45);background:rgba(255,255,255,.06);box-shadow:0 16px 38px rgba(0,0,0,.25)}
+.btn.primary{color:#07110e;background:linear-gradient(135deg,#f9fbff,var(--mint));border-color:rgba(255,255,255,.65)}
+.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}
+.hero-meta span{font:400 11px var(--mono);color:var(--muted);padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.02)}
+.hero-meta b{color:var(--text);font-weight:500}
+
+/* RESEARCH MAP */
+.research-map{position:relative;min-height:545px;border:1px solid var(--line);border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.018)),rgba(14,18,27,.66);box-shadow:var(--shadow);overflow:hidden;isolation:isolate}
+.research-map::before{content:"";position:absolute;width:390px;height:390px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(125,240,198,.085),transparent 67%);filter:blur(6px)}
+.map-head{position:absolute;left:22px;right:22px;top:20px;display:flex;justify-content:space-between;align-items:center;font:400 10.5px var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.map-head strong{color:var(--mint);font-weight:500}
+.orbit{position:absolute;left:50%;top:53%;transform:translate(-50%,-50%);border:1px solid rgba(255,255,255,.07);border-radius:50%}
+.orbit.o1{width:190px;height:190px}
+.orbit.o2{width:310px;height:310px}
+.orbit.o3{width:430px;height:430px;border-style:dashed;animation:spin 38s linear infinite}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.center-node{position:absolute;left:50%;top:53%;transform:translate(-50%,-50%);width:108px;height:108px;border-radius:30px;display:grid;place-items:center;text-align:center;background:linear-gradient(145deg,rgba(125,240,198,.19),rgba(123,180,255,.12)),#101720;border:1px solid rgba(125,240,198,.24);box-shadow:0 0 70px rgba(125,240,198,.09);font-weight:800;line-height:1.15}
+.center-node small{display:block;color:var(--muted);font:400 9px var(--mono);margin-top:5px;letter-spacing:.08em}
+.node{position:absolute;padding:9px 12px;border-radius:13px;border:1px solid var(--line2);background:rgba(12,16,24,.90);font:500 10.5px var(--mono);color:var(--soft);box-shadow:0 12px 32px rgba(0,0,0,.26);animation:float 5.5s ease-in-out infinite}
+.node::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--node,var(--blue));margin-right:7px;box-shadow:0 0 10px color-mix(in srgb,var(--node,var(--blue)) 75%,transparent)}
+.node.n1{left:9%;top:29%;--node:var(--blue);animation-delay:-1s}.node.n2{right:9%;top:25%;--node:var(--mint);animation-delay:-2.3s}.node.n3{left:6%;bottom:22%;--node:var(--rose);animation-delay:-3.1s}.node.n4{right:7%;bottom:20%;--node:var(--violet);animation-delay:-4s}.node.n5{left:37%;bottom:8%;--node:var(--amber);animation-delay:-.6s}
+@keyframes float{50%{transform:translateY(-8px)}}
+.map-footer{position:absolute;left:22px;right:22px;bottom:18px;display:flex;justify-content:space-between;color:var(--muted);font:400 9.5px var(--mono);letter-spacing:.04em}
+
+/* TICKER */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:rgba(255,255,255,.015)}
+.ticker-track{display:flex;width:max-content;gap:36px;padding:15px 0;animation:marquee 28s linear infinite}
+.ticker span{font:500 11px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.12em;white-space:nowrap}
+.ticker b{color:var(--soft);font-weight:500}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{padding:86px 0;scroll-margin-top:90px}
+.section-head{display:grid;grid-template-columns:1fr .8fr;gap:38px;align-items:end;margin-bottom:30px}
+.eyebrow{color:var(--mint);font:500 10.5px var(--mono);letter-spacing:.17em;text-transform:uppercase;margin-bottom:12px}
+h2{font-size:clamp(34px,4.6vw,58px);line-height:1.05;letter-spacing:-.05em;margin-bottom:0}
+.section-head p{color:var(--muted);margin:0;max-width:520px;font-size:14px}
+
+/* BENTO WORK */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(110px,auto);gap:16px}
+.card{position:relative;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(160deg,rgba(255,255,255,.058),rgba(255,255,255,.018)),rgba(12,16,24,.64);overflow:hidden;box-shadow:0 14px 50px rgba(0,0,0,.13);transition:transform .38s cubic-bezier(.2,.8,.2,1),border-color .3s ease,box-shadow .3s ease}
+.card:hover{transform:translateY(-6px);border-color:rgba(123,180,255,.26);box-shadow:0 26px 70px rgba(0,0,0,.28)}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(430px 160px at var(--x,50%) var(--y,0%),rgba(123,180,255,.11),transparent 60%);opacity:0;transition:opacity .35s ease;pointer-events:none}
+.card:hover::before{opacity:1}
+.project{padding:25px;display:flex;flex-direction:column;justify-content:space-between;min-height:330px}.project.large{grid-column:span 7;grid-row:span 2}.project.side{grid-column:span 5}.project.half{grid-column:span 6}.project.third{grid-column:span 4;min-height:290px}
+.num{font:500 10px var(--mono);color:var(--amber);letter-spacing:.14em}
+.card h3{font-size:clamp(21px,2.5vw,31px);line-height:1.12;letter-spacing:-.035em;margin:15px 0 10px;max-width:560px}
+.card p{color:var(--muted);font-size:13.5px;max-width:610px}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}.tag{padding:6px 9px;border-radius:999px;border:1px solid var(--line);font:400 9.5px var(--mono);color:var(--soft);background:rgba(255,255,255,.02)}
+.card-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px}.card-link{font:500 11px var(--mono);color:var(--soft);display:inline-flex;align-items:center;gap:7px}.card-link span{transition:transform .2s ease}.card:hover .card-link span{transform:translateX(4px)}
+.badge{font:500 9px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#dffcf3;padding:6px 8px;border-radius:999px;border:1px solid rgba(125,240,198,.18);background:rgba(125,240,198,.05)}
+.visual-block{position:absolute;right:-18px;bottom:-34px;width:210px;height:210px;border-radius:50%;border:1px solid rgba(255,255,255,.07);background:radial-gradient(circle at 35% 35%,rgba(125,240,198,.16),transparent 55%),radial-gradient(circle at 60% 68%,rgba(123,180,255,.12),transparent 50%);opacity:.9}.visual-block::before,.visual-block::after{content:"";position:absolute;border:1px solid rgba(255,255,255,.07);border-radius:50%;inset:26px}.visual-block::after{inset:58px}
+
+/* PUBLICATION */
+.paper-card{display:grid;grid-template-columns:1.1fr .9fr;gap:0;border:1px solid var(--line);border-radius:30px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.015)),rgba(13,17,25,.64)}
+.paper-main{padding:34px;border-right:1px solid var(--line)}
+.paper-main .status{display:inline-flex;align-items:center;gap:7px;font:500 10px var(--mono);color:#e8fdf6;border:1px solid rgba(125,240,198,.18);background:rgba(125,240,198,.05);padding:7px 9px;border-radius:999px}.paper-main .status i{width:6px;height:6px;border-radius:50%;background:var(--mint)}
+.paper-main h3{font-size:clamp(29px,3.6vw,45px);line-height:1.08;margin:22px 0 14px;letter-spacing:-.045em}.paper-main p{color:var(--muted);max-width:720px}
+.paper-side{padding:34px;display:grid;align-content:space-between;gap:28px;background:rgba(255,255,255,.012)}
+.paper-stat{padding-bottom:17px;border-bottom:1px solid var(--line)}.paper-stat:last-child{border:0;padding-bottom:0}.paper-stat small{display:block;color:var(--muted);font:400 9px var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px}.paper-stat strong{font-size:17px}
+
+/* OPEN SOURCE */
+.repo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.repo{padding:21px;min-height:215px}.repo .repo-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.repo-icon{width:34px;height:34px;border-radius:11px;border:1px solid var(--line);display:grid;place-items:center;font:500 11px var(--mono);color:var(--mint);background:rgba(255,255,255,.025)}.repo h3{font-size:18px;margin:24px 0 8px}.repo p{font-size:12.5px}.repo-arrow{font-size:18px;color:var(--muted);transition:.25s ease}.repo:hover .repo-arrow{transform:translate(3px,-3px);color:var(--mint)}
+
+/* SKILLS */
+.skill-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.skill-intro{padding:28px;min-height:360px}.skill-intro h3{font-size:31px;margin-bottom:14px}.skill-intro p{color:var(--muted)}.skill-matrix{display:grid;grid-template-columns:1fr 1fr;gap:14px}.skill-box{padding:22px}.skill-box h3{font-size:16px;margin:0 0 14px}.skill-box .tags{margin-top:0}
+
+/* EDUCATION + CONTACT */
+.timeline{display:grid;gap:0}.timeline-row{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:26px 0;border-top:1px solid var(--line)}.timeline-row:last-child{border-bottom:1px solid var(--line)}.timeline-row .year{font:500 10px var(--mono);color:var(--mint);letter-spacing:.08em}.timeline-row h3{font-size:24px;margin:0 0 6px}.timeline-row p{color:var(--muted);margin:0;font-size:13.5px}
+.contact-box{position:relative;padding:46px;border:1px solid var(--line);border-radius:34px;overflow:hidden;background:linear-gradient(135deg,rgba(125,240,198,.08),rgba(123,180,255,.05) 45%,rgba(181,156,255,.05)),rgba(12,16,24,.7)}.contact-box::after{content:"KP";position:absolute;right:22px;bottom:-42px;font-size:180px;font-weight:800;line-height:1;color:rgba(255,255,255,.025);letter-spacing:-.08em}.contact-box h2{max-width:790px}.contact-box p{max-width:680px;color:var(--muted);font-size:15px;margin-top:15px}.contact-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}
+footer{padding:25px 0 36px;border-top:1px solid var(--line);color:var(--muted);font:400 10.5px var(--mono);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s cubic-bezier(.2,.8,.2,1),transform .75s cubic-bezier(.2,.8,.2,1)}.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+@media(max-width:960px){.hero{grid-template-columns:1fr;min-height:auto}.research-map{min-height:500px}.section-head{grid-template-columns:1fr}.paper-card{grid-template-columns:1fr}.paper-main{border-right:0;border-bottom:1px solid var(--line)}.repo-grid{grid-template-columns:1fr 1fr}.skill-layout{grid-template-columns:1fr}.project.large,.project.side,.project.half,.project.third{grid-column:span 12}.nav-links{display:none}}
+@media(max-width:650px){.wrap{width:min(100% - 28px,1180px)}.hero{padding:68px 0 55px;gap:36px}.research-map{min-height:430px}.orbit.o3{width:340px;height:340px}.orbit.o2{width:250px;height:250px}.orbit.o1{width:160px;height:160px}.node{font-size:9px;padding:7px 8px}.node.n1{left:3%}.node.n2{right:3%}.node.n3{left:2%}.node.n4{right:2%}.node.n5{left:32%}.repo-grid,.skill-matrix{grid-template-columns:1fr}.timeline-row{grid-template-columns:1fr;gap:7px}.contact-box{padding:30px 24px}.avail{display:none}section{padding:64px 0}}
+</style>
+</head>
+<body>
+<div class="spotlight" id="spotlight"></div>
+<header class="navbar">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><span class="brand-mark">KP</span><span>Karthika Potail</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a><a href="#research">Research</a><a href="#opensource">Open source</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="avail"><i></i>Open to AI/ML &amp; research roles</div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-copy reveal">
+      <div class="kicker">AI/ML · TinyML · Edge AI · Research</div>
+      <h1>I build <span class="serif">intelligent systems</span> for signals, data &amp; edge devices.</h1>
+      <p class="lead">I’m Karthika Potail, an M.S. Computer Engineering graduate from The University of Texas at Dallas. My work sits between machine learning research and practical engineering — from cuffless blood-pressure estimation and TinyML to retrieval systems and intelligent automation.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#work">Explore my work <span>↘</span></a>
+        <a class="btn" href="https://github.com/KarthikaPotail" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/shalinipotail" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <div class="hero-meta">
+        <span><b>IEEE ISVLSI 2026</b> · accepted paper</span>
+        <span><b>UT Dallas</b> · M.S. Computer Engineering</span>
+        <span><b>Focus</b> · reliable + deployable ML</span>
+      </div>
+    </div>
+
+    <aside class="research-map reveal" aria-label="Research map">
+      <div class="map-head"><span>research map / 2026</span><strong>ACTIVE</strong></div>
+      <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+      <div class="center-node">KARTHIKA<small>AI / ML</small></div>
+      <div class="node n1">TinyML</div><div class="node n2">Edge AI</div><div class="node n3">PPG + ECG</div><div class="node n4">RAG</div><div class="node n5">Reliable ML</div>
+      <div class="map-footer"><span>research → prototype → evaluate → deploy</span><span>UTD · TX</span></div>
+    </aside>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span><b>Python</b></span><span>Machine Learning</span><span><b>TinyML</b></span><span>Edge Impulse</span><span><b>PPG / ECG</b></span><span>Signal Processing</span><span><b>RAG</b></span><span>LangChain</span><span><b>Scikit-learn</b></span><span>Model Evaluation</span><span><b>Python</b></span><span>Machine Learning</span><span><b>TinyML</b></span><span>Edge Impulse</span><span><b>PPG / ECG</b></span><span>Signal Processing</span><span><b>RAG</b></span><span>LangChain</span><span><b>Scikit-learn</b></span><span>Model Evaluation</span>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="eyebrow">Selected work</div><h2>Projects with a clear research question — and an engineering outcome.</h2></div>
+        <p>I care about more than a model score. These projects look at data quality, validation, model trade-offs, interpretability, and whether a system can survive outside a notebook.</p>
+      </div>
+      <div class="bento">
+        <article class="card project large reveal">
+          <div>
+            <div class="num">01 / FEATURED RESEARCH</div>
+            <h3>TinyML-based continuous blood pressure monitoring from PPG</h3>
+            <p>A lightweight ML workflow for cuffless BP estimation using PPG, designed around preprocessing, feature extraction, model evaluation, quantization, and resource-constrained deployment.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">TinyML</span><span class="tag">Edge Impulse</span></div>
+          </div>
+          <div class="card-bottom"><span class="badge">IEEE ISVLSI 2026</span><a class="card-link" href="#research">Research details <span>→</span></a></div>
+          <div class="visual-block" aria-hidden="true"></div>
+        </article>
+        <article class="card project side reveal">
+          <div><div class="num">02 / MULTIMODAL</div><h3>ECG + PPG blood-pressure estimation</h3><p>Controlled comparison of multimodal physiological signals for SBP and DBP estimation, with emphasis on feature design, validation, and generalization.</p><div class="tags"><span class="tag">ECG</span><span class="tag">PPG</span><span class="tag">Regression</span><span class="tag">Validation</span></div></div>
+          <div class="card-bottom"><span class="badge">In progress</span><span class="card-link">Research track <span>→</span></span></div>
+        </article>
+        <article class="card project half reveal">
+          <div><div class="num">03 / INTELLIGENT RETRIEVAL</div><h3>Document intelligence + RAG</h3><p>Retrieval-driven workflows for extracting and answering questions over structured and unstructured documents using embeddings, vector search, and LLM APIs.</p><div class="tags"><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">ChromaDB</span><span class="tag">OpenAI APIs</span></div></div>
+          <div class="card-bottom"><span class="badge">Applied AI</span><span class="card-link">System design <span>→</span></span></div>
+        </article>
+        <article class="card project half reveal">
+          <div><div class="num">04 / COMPUTER VISION</div><h3>Face-mask detection</h3><p>An end-to-end image classification workflow covering preprocessing, CNN model development, validation, and organized experimental outputs.</p><div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">CNN</span><span class="tag">Deep Learning</span></div></div>
+          <div class="card-bottom"><span class="badge">Computer vision</span><span class="card-link">Project <span>→</span></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="eyebrow">Research</div><h2>From benchmark accuracy to real-world reliability.</h2></div>
+        <p>My research interests center on wearable sensing, cuffless blood-pressure estimation, TinyML, calibration, subject-level validation, and deployment constraints.</p>
+      </div>
+      <article class="paper-card reveal">
+        <div class="paper-main">
+          <span class="status"><i></i> ACCEPTED · IEEE ISVLSI 2026</span>
+          <h3>TinyML Based Continuous Blood Pressure Monitoring from PPG Signals for Resource Constrained Devices</h3>
+          <p>Research on continuous cuffless blood-pressure estimation using PPG signals with an emphasis on efficient machine-learning pipelines suitable for constrained edge environments.</p>
+          <div class="tags"><span class="tag">Cuffless BP</span><span class="tag">PPG</span><span class="tag">TinyML</span><span class="tag">Edge AI</span><span class="tag">Quantization</span></div>
+        </div>
+        <div class="paper-side">
+          <div class="paper-stat"><small>Research themes</small><strong>Wearable sensing · signal ML · edge deployment</strong></div>
+          <div class="paper-stat"><small>Current questions</small><strong>Calibration · dataset bias · subject leakage · external validation</strong></div>
+          <div class="paper-stat"><small>Next direction</small><strong>Multimodal ECG + PPG + PCG estimation and calibration-free modeling</strong></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="opensource">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="eyebrow">Open source lab</div><h2>Small, focused implementations you can actually inspect.</h2></div>
+        <p>A portfolio is more useful when the work is visible. These repositories focus on one technical problem at a time instead of hiding everything inside a large demo.</p>
+      </div>
+      <div class="repo-grid">
+        <a class="card repo reveal" href="https://github.com/KarthikaPotail/ppg-signal-toolkit" target="_blank" rel="noopener"><div class="repo-top"><span class="repo-icon">01</span><span class="repo-arrow">↗</span></div><h3>PPG Signal Toolkit</h3><p>Filtering, beat detection, heart-rate estimation, and HRV features.</p><div class="tags"><span class="tag">Python</span><span class="tag">SciPy</span><span class="tag">PPG</span></div></a>
+        <a class="card repo reveal" href="https://github.com/KarthikaPotail/tinyml-quantization-benchmark" target="_blank" rel="noopener"><div class="repo-top"><span class="repo-icon">02</span><span class="repo-arrow">↗</span></div><h3>TinyML Quantization Benchmark</h3><p>Float32 vs Int8 trade-offs across model size, latency, and accuracy.</p><div class="tags"><span class="tag">TinyML</span><span class="tag">Int8</span><span class="tag">Benchmark</span></div></a>
+        <a class="card repo reveal" href="https://github.com/KarthikaPotail/ppg-signal-quality-classifier" target="_blank" rel="noopener"><div class="repo-top"><span class="repo-icon">03</span><span class="repo-arrow">↗</span></div><h3>PPG Signal Quality Classifier</h3><p>Screening clean and motion-corrupted windows before downstream analysis.</p><div class="tags"><span class="tag">Random Forest</span><span class="tag">Signal Quality</span></div></a>
+        <a class="card repo reveal" href="https://github.com/KarthikaPotail/ecg-arrhythmia-classifier" target="_blank" rel="noopener"><div class="repo-top"><span class="repo-icon">04</span><span class="repo-arrow">↗</span></div><h3>ECG Arrhythmia Classifier</h3><p>Compact heartbeat classification workflow using morphology features.</p><div class="tags"><span class="tag">ECG</span><span class="tag">MLP</span><span class="tag">Classification</span></div></a>
+        <a class="card repo reveal" href="https://github.com/KarthikaPotail/explainable-bp-dashboard" target="_blank" rel="noopener"><div class="repo-top"><span class="repo-icon">05</span><span class="repo-arrow">↗</span></div><h3>Explainable BP Dashboard</h3><p>Feature-importance views that make BP model behavior easier to inspect.</p><div class="tags"><span class="tag">XAI</span><span class="tag">Interpretability</span></div></a>
+        <a class="card repo reveal" href="https://github.com/KarthikaPotail" target="_blank" rel="noopener"><div class="repo-top"><span class="repo-icon">+</span><span class="repo-arrow">↗</span></div><h3>More on GitHub</h3><p>Research prototypes, ML experiments, and engineering work in progress.</p><div class="tags"><span class="tag">github.com/KarthikaPotail</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="eyebrow">Toolkit</div><h2>Research thinking, backed by hands-on implementation.</h2></div>
+        <p>I’m strongest when I can connect a research question to data preparation, modeling, evaluation, and an implementation someone else can reproduce.</p>
+      </div>
+      <div class="skill-layout">
+        <article class="card skill-intro reveal"><div class="num">WORKING STYLE</div><h3>Build → measure → challenge assumptions → iterate.</h3><p>I prefer controlled comparisons, explicit baselines, visible metrics, and documenting why a model works — or why it fails.</p><div class="tags"><span class="tag">Experiment design</span><span class="tag">Error analysis</span><span class="tag">Technical writing</span></div></article>
+        <div class="skill-matrix">
+          <article class="card skill-box reveal"><h3>AI / ML</h3><div class="tags"><span class="tag">Machine Learning</span><span class="tag">Regression</span><span class="tag">Classification</span><span class="tag">Deep Learning</span><span class="tag">Model Evaluation</span><span class="tag">Feature Engineering</span></div></article>
+          <article class="card skill-box reveal"><h3>Data + Signals</h3><div class="tags"><span class="tag">PPG</span><span class="tag">ECG</span><span class="tag">Time-series</span><span class="tag">Filtering</span><span class="tag">Windowing</span><span class="tag">Signal Quality</span></div></article>
+          <article class="card skill-box reveal"><h3>Engineering</h3><div class="tags"><span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">SQL</span><span class="tag">C++</span><span class="tag">REST APIs</span><span class="tag">FastAPI</span></div></article>
+          <article class="card skill-box reveal"><h3>Edge + GenAI</h3><div class="tags"><span class="tag">TinyML</span><span class="tag">Edge Impulse</span><span class="tag">Quantization</span><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">ChromaDB</span></div></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow">Education</div><h2>Computer engineering foundation, AI/ML direction.</h2></div></div>
+      <div class="timeline reveal">
+        <div class="timeline-row"><div class="year">2024 — 2026</div><div><h3>M.S. Computer Engineering</h3><p>The University of Texas at Dallas · Richardson, Texas</p></div></div>
+        <div class="timeline-row"><div class="year">2020 — 2024</div><div><h3>B.Tech Computer Science &amp; Engineering</h3><p>Malla Reddy Engineering College for Women · Hyderabad, India</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box reveal">
+        <div class="eyebrow">Contact</div>
+        <h2>Interested in research, AI/ML engineering, or a difficult problem worth exploring?</h2>
+        <p>I’m open to conversations around AI/ML roles, research collaborations, TinyML, wearable sensing, intelligent retrieval, and PhD research opportunities.</p>
+        <div class="contact-actions"><a class="btn primary" href="mailto:shalinipotail@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/shalinipotail" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="https://github.com/KarthikaPotail" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap"><span>© <span id="year"></span> Karthika Potail</span><span>AI/ML · TinyML · Edge AI · Research</span></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const spot=document.getElementById('spotlight');
+window.addEventListener('pointermove',e=>{spot.style.left=e.clientX+'px';spot.style.top=e.clientY+'px'});
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.card').forEach(card=>card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--x',((e.clientX-r.left)/r.width*100)+'%');card.style.setProperty('--y',((e.clientY-r.top)/r.height*100)+'%')}));
+</script>
+</body>
+</html>
